@@ -1,0 +1,11 @@
+# CODEOWNERS
+# The last matching pattern wins. Owners need write access.
+# Teams are @org/team-name. This file is not consulted for draft pull requests.
+# Replace the placeholder owners before committing.
+
+* @OWNER
+
+/.github/ @OWNER
+/skills/ @OWNER
+/examples/ @OWNER
+*.md @OWNER

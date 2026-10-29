@@ -1,0 +1,37 @@
+name: Mark stale issues and pull requests
+
+on:
+  schedule:
+    - cron: "30 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v11
+        with:
+          # debug-only logs the actions and changes nothing. Set false only
+          # after a debug run looks right. Closing issues is destructive.
+          debug-only: true
+          days-before-stale: 60
+          days-before-close: 14
+          stale-issue-label: stale
+          stale-pr-label: stale
+          exempt-issue-labels: "priority:p0,good first issue"
+          exempt-pr-labels: "priority:p0"
+          exempt-all-milestones: true
+          close-issue-reason: not_planned
+          stale-issue-message: >
+            This issue has had no activity for 60 days and is marked stale.
+            Comment if it should stay open. It will close in 14 days otherwise.
+          close-issue-message: >
+            Closed because it stayed stale. Comment to reopen if it still matters.
+          stale-pr-message: >
+            This pull request has had no activity for 60 days and is marked stale.
+          close-pr-message: >
+            Closed because it stayed stale. Open a new pull request if the change is still wanted.

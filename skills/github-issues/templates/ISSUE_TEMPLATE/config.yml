@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://github.com/OWNER/REPO/discussions
+    about: Questions and how-to requests belong in Discussions. Please do not open an issue for them.
+  - name: Security report
+    url: https://github.com/OWNER/REPO/security/policy
+    about: Report a vulnerability privately. Do not file a public issue.
