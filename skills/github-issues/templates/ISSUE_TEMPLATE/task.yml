@@ -1,0 +1,35 @@
+name: Task
+description: Track a bounded piece of work that is not a bug or a feature request.
+title: "[Task]: "
+labels: ["type:task", "needs-triage"]
+type: Task
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What is true when this task is done?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Link the parent issue or spec, and say why this slice exists.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of scope
+      description: What this task will not change.
+    validations:
+      required: false

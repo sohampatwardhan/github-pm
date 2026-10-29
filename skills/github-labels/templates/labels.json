@@ -1,0 +1,114 @@
+{
+  "labels": [
+    {
+      "name": "type:bug",
+      "color": "d73a4a",
+      "description": "Defect in existing behavior"
+    },
+    {
+      "name": "type:feature",
+      "color": "a2eeef",
+      "description": "New capability"
+    },
+    {
+      "name": "type:task",
+      "color": "c5def5",
+      "description": "Bounded piece of work that is not a bug or a feature"
+    },
+    {
+      "name": "type:epic",
+      "color": "6f42c1",
+      "description": "Parent issue that tracks a body of work"
+    },
+    {
+      "name": "priority:p0",
+      "color": "b60205",
+      "description": "Drop everything. Production is broken or a hard deadline is at risk"
+    },
+    {
+      "name": "priority:p1",
+      "color": "d93f0b",
+      "description": "Do this sprint"
+    },
+    {
+      "name": "priority:p2",
+      "color": "fbca04",
+      "description": "Do soon, after P0 and P1"
+    },
+    {
+      "name": "priority:p3",
+      "color": "c5def5",
+      "description": "Nice to have"
+    },
+    {
+      "name": "area:api",
+      "color": "1d76db",
+      "description": "Server, API, or backend"
+    },
+    {
+      "name": "area:ui",
+      "color": "5319e7",
+      "description": "User interface"
+    },
+    {
+      "name": "area:docs",
+      "color": "0075ca",
+      "description": "Documentation"
+    },
+    {
+      "name": "area:ci",
+      "color": "bfd4f2",
+      "description": "CI, builds, and release automation"
+    },
+    {
+      "name": "area:security",
+      "color": "ee0701",
+      "description": "Security-sensitive change"
+    },
+    {
+      "name": "needs-triage",
+      "color": "fbca04",
+      "description": "Not yet reviewed"
+    },
+    {
+      "name": "needs-info",
+      "color": "d4c5f9",
+      "description": "Waiting on the reporter"
+    },
+    {
+      "name": "blocked",
+      "color": "b60205",
+      "description": "Cannot proceed until another issue lands"
+    },
+    {
+      "name": "good first issue",
+      "color": "7057ff",
+      "description": "A well-scoped change for a new contributor"
+    },
+    {
+      "name": "help wanted",
+      "color": "008672",
+      "description": "Maintainers welcome outside help"
+    },
+    {
+      "name": "breaking-change",
+      "color": "d93f0b",
+      "description": "A change that breaks existing callers"
+    },
+    {
+      "name": "dependencies",
+      "color": "0366d6",
+      "description": "Dependency update"
+    },
+    {
+      "name": "ignore-for-release",
+      "color": "eeeeee",
+      "description": "Exclude this pull request from generated release notes"
+    },
+    {
+      "name": "stale",
+      "color": "ededed",
+      "description": "No recent activity. Applied by the stale workflow"
+    }
+  ]
+}
